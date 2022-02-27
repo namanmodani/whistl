@@ -3,7 +3,7 @@ whistl - The Community Accessibility Bulletin
 
 ## Why?
 
-Roughly 15% of UCLA students reported having some type of disability. [Source.](https://sairo.ucla.edu/file/4317cf06-d7d3-4464-95f6-dde3786e7820)
+Roughly [15% of UCLA students reported having some type of disability](https://sairo.ucla.edu/file/4317cf06-d7d3-4464-95f6-dde3786e7820).
 Given that there are [~31,600 undergraduate students](https://www.ucla.edu/about/facts-and-figures) on campus, this translates to nearly 5,000 - a substantial number of - students having a disability. We wanted to create an app that empowered differently-abled people to thrive better.
 
 ## How?
