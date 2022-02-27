@@ -1,5 +1,7 @@
 # whistl - The Community Accessibility Bulletin
 
+[GitHub Repository](https://github.com/namanmodani/whistl) | [Figma Prototype](https://www.figma.com/file/39obHkouG3yu8uLHtSNXsC/whistl?node-id=0%3A1)
+
 ## Inspiration
 
 Roughly [15% of UCLA students reported having some type of disability](https://sairo.ucla.edu/file/4317cf06-d7d3-4464-95f6-dde3786e7820). We wanted to create an app that empowered differently-abled people to thrive and navigate UCLA with ease.
