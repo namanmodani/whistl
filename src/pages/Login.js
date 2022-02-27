@@ -7,39 +7,6 @@ import { AuthContext } from "../utils/auth";
 import { Redirect } from "wouter";
 
 
-function SignUp() {
-  const [recaptcha, setRecaptcha] = useState(null);
-  const element = useRef(null);
-  const { auth, user } = useContext(AuthContext);
-
-  useEffect(() => {
-    if (!recaptcha) {
-      const verifier = new RecaptchaVerifier(
-        element.current,
-        {
-          size: "invisible",
-        },
-        auth
-      );
-
-      verifier.verify().then(() => setRecaptcha(verifier));
-    }
-  }, []);
-
-  return (
-    <>
-      {user ? (
-        <Redirect to="/" />
-      ) : (
-        <>
-          {recaptcha && <PhoneNumberVerification recaptcha={recaptcha} />}
-          <div ref={element}></div>
-        </>
-      )}
-    </>
-  );
-}
-
 function PhoneNumberVerification({ recaptcha }) {
   const [phone, setPhone] = useState("");
   const [confirmationResult, setConfirmationResult] = useState(null);
@@ -99,6 +66,40 @@ function PhoneNumberVerification({ recaptcha }) {
             Verify Code
           </Button>
         </VStack>
+      )}
+    </>
+  );
+}
+
+
+function SignUp() {
+  const [recaptcha, setRecaptcha] = useState(null);
+  const element = useRef(null);
+  const { auth, user } = useContext(AuthContext);
+
+  useEffect(() => {
+    if (!recaptcha) {
+      const verifier = new RecaptchaVerifier(
+        element.current,
+        {
+          size: "invisible",
+        },
+        auth
+      );
+
+      verifier.verify().then(() => setRecaptcha(verifier));
+    }
+  }, []);
+
+  return (
+    <>
+      {user ? (
+        <Redirect to="/" />
+      ) : (
+        <>
+          {recaptcha && <PhoneNumberVerification recaptcha={recaptcha} />}
+          <div ref={element}></div>
+        </>
       )}
     </>
   );

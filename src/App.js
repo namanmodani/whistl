@@ -9,7 +9,8 @@ import {
   getAuth,
   setPersistence,
   browserLocalPersistence,
-} from "firebase/auth";
+} 
+from "firebase/auth";
 import Login from "./pages/Login";
 import Logout from "./pages/Logout";
 
