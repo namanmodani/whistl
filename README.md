@@ -1,5 +1,4 @@
-# whistl
-whistl - The Community Accessibility Bulletin
+# whistl - The Community Accessibility Bulletin
 
 ## Why?
 
