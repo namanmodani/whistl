@@ -51,7 +51,7 @@ We definitely gained technical experience through this hackathon, but more impor
 
 Often, our ideas conflicted, but we managed to work it out. The intense time pressure also taught us to manage our work and spread the load evenly. All in all, this was an incredible experience where we all grew academically and personally.
 
-## What's next for whistl - The Community Accessibility Bulletin
+## What's next for whistl
 
 After identifying the vital problem of making a community more accessible and taking a step in the right direction by implementing our web application, we believe that our journey doesn’t stop here.
 
