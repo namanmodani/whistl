@@ -41,12 +41,6 @@ export const getPosts = async (callback) => {
   });
 };
 
-export const updatePost = async (id, upvoteCount) => {
-  await updateDoc(doc(db, "posts", id), {
-    upvoteCount: upvoteCount,
-  });
-};
-
 // Add a post
 export const addPost = async (title, body, time, tags, coords) => {
   await addDoc(collection(db, "posts"), {
@@ -59,3 +53,12 @@ export const addPost = async (title, body, time, tags, coords) => {
     upvoteCount: 0,
   });
 };
+
+// Implement upvote count
+export const updatePost = async (id, upvoteCount) => {
+  await updateDoc(doc(db, "posts", id), {
+    upvoteCount: upvoteCount,
+  });
+};
+
+

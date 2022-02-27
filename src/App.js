@@ -20,6 +20,7 @@ setPersistence(auth, browserLocalPersistence)
   .then((res) => console.log(res))
   .catch((err) => console.log(err));
 
+// Project theme 
 const theme = extendTheme({
   colors: {
     lightGreen: "#189AB4",
