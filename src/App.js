@@ -23,9 +23,9 @@ setPersistence(auth, browserLocalPersistence)
 // Project theme 
 const theme = extendTheme({
   colors: {
-    lightGreen: "#189AB4",
-    darkGreen: "#05445E",
-    carrot: "#D4F1F4",
+    lightBlue: "#189AB4",
+    darkBlue: "#05445E",
+    Blue: "#D4F1F4",
   },
   fonts: {
     heading: 'HK Grotesk, sans-serif',

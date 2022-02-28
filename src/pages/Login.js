@@ -8,26 +8,26 @@ import { Redirect } from "wouter";
 
 
 function PhoneNumberVerification({ recaptcha }) {
-  const [phone, setPhone] = useState("");
-  const [confirmationResult, setConfirmationResult] = useState(null);
-  const [code, setCode] = useState("");
-  const { auth, setUser } = useContext(AuthContext);
+  const [phone, setPhone]  =  useState("");
+  const [confirmationResult, setConfirmationResult]  =  useState(null);
+  const [code, setCode]  =  useState("");
+  const { auth, setUser }  =  useContext(AuthContext);
 
-  const phoneNumber = `+1${phone}`;
+  const phoneNumber  =  `+1${phone}`;
 
-  const signIn = async () => {
+  const signIn  =  async ()  => {
     setConfirmationResult(
       await signInWithPhoneNumber(auth, phoneNumber, recaptcha)
     );
   };
 
-  const verifyCode = async () => {
+  const verifyCode  =  async ()  => {
     confirmationResult
       .confirm(code)
-      .then((result) => {
+      .then((result)  => {
         setUser(result.user);
       })
-      .catch((error) => console.log(error));
+      .catch((error)  => console.log(error));
   };
 
   return (
@@ -35,18 +35,18 @@ function PhoneNumberVerification({ recaptcha }) {
       <VStack>
         <Text>Phone number</Text>
         <Input
-          type="tel"
-          autoComplete="tel"
-          placeholder="1234567890"
-          value={phone}
-          onChange={(e) => setPhone(e.target.value)}
+          type = "tel"
+          autoComplete = "tel"
+          placeholder = "1234567890"
+          value = {phone}
+          onChange = {(e)  => setPhone(e.target.value)}
         />
         <Button
-          ml="8px"
-          bg="darkGreen"
-          color="white"
-          _hover={{ bg: "carrot" }}
-          onClick={signIn}
+          ml = "8px"
+          bg = "darkBlue"
+          color = "white"
+          _hover = {{ bg: "Blue" }}
+          onClick = {signIn}
         >
           Sign In
         </Button>
@@ -55,13 +55,13 @@ function PhoneNumberVerification({ recaptcha }) {
       {confirmationResult && (
         <VStack>
           <Text>Please verify with the code sent to your phone</Text>
-          <Input type="number" autoComplete="one-time-code" value={code} onChange={(e) => setCode(e.target.value)} />
+          <Input type = "number" autoComplete = "one-time-code" value = {code} onChange = {(e)  => setCode(e.target.value)} />
           <Button
-            ml="8px"
-            bg="darkGreen"
-            color="white"
-            _hover={{ bg: "carrot" }}
-            onClick={verifyCode}
+            ml = "8px"
+            bg = "darkBlue"
+            color = "white"
+            _hover = {{ bg: "Blue" }}
+            onClick = {verifyCode}
           >
             Verify Code
           </Button>
@@ -73,13 +73,13 @@ function PhoneNumberVerification({ recaptcha }) {
 
 
 function SignUp() {
-  const [recaptcha, setRecaptcha] = useState(null);
-  const element = useRef(null);
-  const { auth, user } = useContext(AuthContext);
+  const [recaptcha, setRecaptcha]  =  useState(null);
+  const element  =  useRef(null);
+  const { auth, user }  =  useContext(AuthContext);
 
-  useEffect(() => {
+  useEffect(()  => {
     if (!recaptcha) {
-      const verifier = new RecaptchaVerifier(
+      const verifier  =  new RecaptchaVerifier(
         element.current,
         {
           size: "invisible",
@@ -87,18 +87,18 @@ function SignUp() {
         auth
       );
 
-      verifier.verify().then(() => setRecaptcha(verifier));
+      verifier.verify().then(()  => setRecaptcha(verifier));
     }
   }, []);
 
   return (
     <>
       {user ? (
-        <Redirect to="/" />
+        <Redirect to = "/" />
       ) : (
         <>
-          {recaptcha && <PhoneNumberVerification recaptcha={recaptcha} />}
-          <div ref={element}></div>
+          {recaptcha && <PhoneNumberVerification recaptcha = {recaptcha} />}
+          <div ref = {element}></div>
         </>
       )}
     </>
@@ -108,18 +108,18 @@ function SignUp() {
 export default function Login() {
   return (
     <VStack
-      bg="lightGreen"
-      minHeight="100vh"
-      align="center"
-      justifyContent="center"
-      backgroundImage={`url(${backgroundSvg})`}
-      backgroundSize="100% auto"
-      backgroundRepeat="no-repeat"
+      bg = "lightBlue"
+      minHeight = "100vh"
+      align = "center"
+      justifyContent = "center"
+      backgroundImage = {`url(${backgroundSvg})`}
+      backgroundSize = "100% auto"
+      backgroundRepeat = "no-repeat"
     >
-      <Heading as="h4" size="sm" color="darkGreen">
+      <Heading as = "h4" size = "sm" color = "darkBlue">
         Welcome to:
       </Heading>
-      <Heading as="h1" size="xl" color="darkGreen" fontFamily="Recoleta">
+      <Heading as = "h1" size = "xl" color = "darkBlue" fontFamily = "Recoleta">
         Hereful
       </Heading>
 

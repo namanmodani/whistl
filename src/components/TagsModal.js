@@ -44,7 +44,7 @@ export default function TagsModal({ isOpen, onClose }) {
     >
       <ModalOverlay>
         <ModalContent>
-          <ModalHeader bg="darkGreen">
+          <ModalHeader bg="darkBlue">
             <Text as="h1" size="lg" color="white">
               Select tags
             </Text>
@@ -73,7 +73,7 @@ export default function TagsModal({ isOpen, onClose }) {
                         },
                       });
                     }}
-                    colorScheme="green"
+                    colorScheme="Blue"
                   >
                     {value.name}
                   </Checkbox>
@@ -82,7 +82,7 @@ export default function TagsModal({ isOpen, onClose }) {
             </Flex>
           </ModalBody>
           <ModalFooter>
-            <Button colorScheme="green" onClick={handleClick}>
+            <Button colorScheme="Blue" onClick={handleClick}>
               Save
             </Button>
           </ModalFooter>

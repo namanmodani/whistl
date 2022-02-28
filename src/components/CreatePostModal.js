@@ -49,19 +49,19 @@ export default function CreatePostModal({ location, isOpen, onClose }) {
     <Modal isOpen={isOpen} onClose={onClose} motionPreset="slideInBottom" size="full">
       <ModalOverlay />
       <ModalContent>
-        <ModalHeader bg="darkGreen"><Text as="h1" size="lg" color="white">Leave an acorn</Text></ModalHeader>
+        <ModalHeader bg="darkBlue"><Text as="h1" size="lg" color="white">Leave an acorn</Text></ModalHeader>
         <ModalCloseButton color="white" />
         <ModalBody>
           <Input
             onChange={(e) => setTitle(e.target.value)}
             placeholder={`Title`}
-            focusBorderColor="carrot"
+            focusBorderColor="Blue"
           />
           <Textarea
             mt="8px"
             onChange={(e) => setDescription(e.target.value)}
             placeholder={`What's Happening?`}
-            focusBorderColor="carrot"
+            focusBorderColor="Blue"
           />
           <Select mt="8px" placeholder="Choose expiry time" onChange={(e) => handleTime(e)}>
             <option value={1}>1 Hour</option>
@@ -75,7 +75,7 @@ export default function CreatePostModal({ location, isOpen, onClose }) {
               const [name, value] = entry;
               return (
                 <Checkbox
-                colorScheme="green"
+                colorScheme="Blue"
                   key={name}
                   isChecked={tags[name].checked}
                   onChange={() => {
@@ -99,7 +99,7 @@ export default function CreatePostModal({ location, isOpen, onClose }) {
           <Button variant="ghost" mr="16px" onClick={onClose}>
             Cancel
           </Button>
-          <Button colorScheme="green" onClick={handleClick}>
+          <Button colorScheme="Blue" onClick={handleClick}>
             Post
           </Button>
         </ModalFooter>

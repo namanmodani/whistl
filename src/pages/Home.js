@@ -16,43 +16,43 @@ import { AuthContext } from "../utils/auth";
 import Navbar from "../components/Navbar";
 
 export default function Home() {
-  const [location, setLocation] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const [location, setLocation]  =  useState([]);
+  const [loading, setLoading]  =  useState(true);
+  const { isOpen, onOpen, onClose }  =  useDisclosure();
   const {
     isOpen: isOpenSettings,
     onOpen: onOpenSettings,
     onClose: onCloseSettings,
-  } = useDisclosure();
-  const { auth, setUser } = useContext(AuthContext);
+  }  =  useDisclosure();
+  const { auth, setUser }  =  useContext(AuthContext);
 
   // Initialize geolocation tracking
-  useEffect(() => {
+  useEffect(()  => {
     // Initialize geolocation tracking
     if (!navigator.geolocation) {
       console.log("Geolocation is not supported by your browser");
     } else {
       console.log("Locating…");
       navigator.geolocation.watchPosition(
-        (success) => {
+        (success)  => {
           setLoading(false);
           console.log(
             `Your location is ${success.coords.latitude}, ${success.coords.longitude} (accuracy of ${success.coords.accuracy})`
           );
           setLocation(success.coords);
         },
-        (error) => console.log(error)
+        (error)  => console.log(error)
       );
     }
 
     // Add listener to see if auth state changes
     onAuthStateChanged(
       auth,
-      (user) => {
+      (user)  => {
         console.log("Setting user");
         setUser(user);
       },
-      (error) => {
+      (error)  => {
         console.log(error);
       }
     );
@@ -60,40 +60,40 @@ export default function Home() {
 
   return (
     <>
-      <CreatePostModal location={location} isOpen={isOpen} onClose={onClose} />
-      <TagsModal isOpen={isOpenSettings} onClose={onCloseSettings} />
+      <CreatePostModal location = {location} isOpen = {isOpen} onClose = {onClose} />
+      <TagsModal isOpen = {isOpenSettings} onClose = {onCloseSettings} />
       {loading ? (
         <VStack
-          loading={loading}
-          align="center"
-          justifyContent="center"
-          bg="lightGreen"
-          minHeight="100vh"
+          loading = {loading}
+          align = "center"
+          justifyContent = "center"
+          bg = "lightBlue"
+          minHeight = "100vh"
         >
-          <Heading color="darkGreen" fontSize="32px">
+          <Heading color = "darkBlue" fontSize = "32px">
             Glad you are here!
           </Heading>
           <Spinner
-            color="carrot"
-            size="xl"
-            emptyColor="darkGreen"
-            speed="1s"
-            thickness="6px"
+            color  =  "Blue"
+            size = "xl"
+            emptyColor = "darkBlue"
+            speed = "1s"
+            thickness = "6px"
           />
-          <Heading color="darkGreen" fontSize="18px">
+          <Heading color = "darkBlue" fontSize = "18px">
             Collecting Acorns...
           </Heading>
         </VStack>
       ) : (
         <>
-          <Navbar createClick={onOpen} profileClick={onOpenSettings} />
-          <Container padding="1em" bg="lightGreen" minHeight="100vh">
+          <Navbar createClick = {onOpen} profileClick = {onOpenSettings} />
+          <Container padding = "1em" bg = "lightBlue" minHeight = "100vh">
             {location && (
               <Box>
-                <Heading as="h2" color="darkGreen" ml="10px">
+                <Heading as = "h2" color = "darkBlue" ml = "10px">
                   Feed
                 </Heading>
-                <PostsList location={location} />
+                <PostsList location = {location} />
               </Box>
             )}
           </Container>
