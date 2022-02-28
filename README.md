@@ -6,7 +6,7 @@ Submission for [Hack on the Hill 9](https://hoth.uclaacm.com/): Equity Track
 
 ## Inspiration
 
-Roughly [15% of UCLA students reported having some type of disability](https://sairo.ucla.edu/file/4317cf06-d7d3-4464-95f6-dde3786e7820). We wanted to create an app that empowered differently-abled people to thrive and navigate UCLA with ease.
+Roughly [15% of UCLA students reported having some type of disability](https://sairo.ucla.edu/file/4317cf06-d7d3-4464-95f6-dde3786e7820). We wanted to create an app that empowered differently-abled people to navigate UCLA with ease.
 
 Sure, UCLA has the [best college campus in the nation](https://www.niche.com/colleges/search/best-college-campuses/). But it isn't perfect. Every now and then, we come across out-of-order elevators, damaged pavements, incorrectly-placed stop signs, poor lighting, lack of crossing mechanisms, and other issues that affect the ability of differently-abled persons to navigate campus.
 
@@ -57,12 +57,12 @@ Often, our ideas conflicted, but we managed to work it out. The intense time pre
 
 ## What's next for whistl
 
-After identifying the vital problem of making a community more accessible and taking a step in the right direction by implementing our web application, we believe that our journey doesn’t stop here.
+- After identifying the vital problem of making a community more accessible and taking a step in the right direction by implementing our web application, we believe that our journey doesn’t stop here.
 
-We aim to add images and videos of the issues people report through our application.
+- We aim to add images and videos of the issues people report through our application.
 
-Furthermore, we would like to focus on migrating to a React Native application, supporting different operating systems natively. This step would increase the performance of our application.
+- Furthermore, we would like to focus on migrating to a React Native application, supporting different operating systems natively. This step would increase the performance of our application.
 
-Moreover, we would improve our notification system, to provide more useful information to our community and better connect with local personnel.
+- Moreover, we would improve our notification system, to provide more useful information to our community and better connect with local personnel.
 
-Last but not least, we would like to build a moderation system to regulate potential abuse.
+- Last but not least, we would like to build a moderation system to regulate potential abuse.
