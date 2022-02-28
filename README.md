@@ -1,6 +1,6 @@
 # whistl - The Community Accessibility Bulletin
 
-[GitHub Repository](https://github.com/namanmodani/whistl) | [Figma Prototype](https://www.figma.com/file/39obHkouG3yu8uLHtSNXsC/whistl?node-id=0%3A1)
+[GitHub Repository](https://github.com/namanmodani/whistl) • [Figma Prototype](https://www.figma.com/file/39obHkouG3yu8uLHtSNXsC/whistl?node-id=0%3A1)
 
 ## Inspiration
 
