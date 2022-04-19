@@ -49,7 +49,7 @@ export default function CreatePostModal({ location, isOpen, onClose }) {
     <Modal isOpen={isOpen} onClose={onClose} motionPreset="slideInBottom" size="full">
       <ModalOverlay />
       <ModalContent>
-        <ModalHeader bg="darkBlue"><Text as="h1" size="lg" color="white">Leave an acorn</Text></ModalHeader>
+        <ModalHeader bg="darkBlue"><Text as="h1" size="lg" color="white">Leave a whistl</Text></ModalHeader>
         <ModalCloseButton color="white" />
         <ModalBody>
           <Input

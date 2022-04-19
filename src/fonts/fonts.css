@@ -69,50 +69,50 @@
 }
 
 @font-face {
-  font-family: 'Recoleta';
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 100;
-  src: url('Recoleta-Thin.woff') format('woff');
+  src: url('Inter-Thin.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Recoleta';
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 300;
-  src: url('Recoleta-Light.woff') format('woff');
+  src: url('Inter-Light.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Recoleta';
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  src: url('Recoleta-Regular.woff') format('woff');
+  src: url('Inter-Regular.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Recoleta';
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
-  src: url('Recoleta-Medium.woff') format('woff');
+  src: url('Inter-Medium.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Recoleta';
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
-  src: url('Recoleta-SemiBold.woff') format('woff');
+  src: url('Inter-SemiBold.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Recoleta';
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
-  src: url('Recoleta-Bold.woff') format('woff');
+  src: url('Inter-Bold.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Recoleta';
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 900;
-  src: url('Recoleta-Black.woff') format('woff');
+  src: url('Inter-Black.woff') format('woff');
 }

@@ -6,7 +6,6 @@ import { Button, Input, Flex, VStack, Text, Heading } from "@chakra-ui/react";
 import { AuthContext } from "../utils/auth";
 import { Redirect } from "wouter";
 
-
 function PhoneNumberVerification({ recaptcha }) {
   const [phone, setPhone]  =  useState("");
   const [confirmationResult, setConfirmationResult]  =  useState(null);
@@ -71,7 +70,6 @@ function PhoneNumberVerification({ recaptcha }) {
   );
 }
 
-
 function SignUp() {
   const [recaptcha, setRecaptcha]  =  useState(null);
   const element  =  useRef(null);
@@ -117,14 +115,13 @@ export default function Login() {
       backgroundRepeat = "no-repeat"
     >
       <Heading as = "h4" size = "sm" color = "darkBlue">
-        Welcome to:
+        Welcome to
       </Heading>
-      <Heading as = "h1" size = "xl" color = "darkBlue" fontFamily = "Recoleta">
-        Hereful
+      <Heading as = "h1" size = "xl" color = "darkBlue" fontFamily = "Inter">
+        whistl
       </Heading>
 
       <SignUp />
-      <Text>Terms & Conditions</Text>
     </VStack>
   );
 }

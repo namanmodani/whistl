@@ -71,7 +71,7 @@ export default function Home() {
           minHeight = "100vh"
         >
           <Heading color = "darkBlue" fontSize = "32px">
-            Glad you are here!
+            Glad you're here!
           </Heading>
           <Spinner
             color  =  "Blue"
@@ -81,7 +81,7 @@ export default function Home() {
             thickness = "6px"
           />
           <Heading color = "darkBlue" fontSize = "18px">
-            Collecting Acorns...
+            Gathering whistls
           </Heading>
         </VStack>
       ) : (

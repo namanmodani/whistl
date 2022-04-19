@@ -60,5 +60,3 @@ export const updatePost = async (id, upvoteCount) => {
     upvoteCount: upvoteCount,
   });
 };
-
-

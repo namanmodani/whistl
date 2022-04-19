@@ -2,7 +2,6 @@ import React from "react";
 import { Flex, Heading, HStack, IconButton, Image } from "@chakra-ui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
-import acorn from "../assests/acorn.svg";
 
 export default function Navbar({ createClick, profileClick }) {
   return (
@@ -22,12 +21,11 @@ export default function Navbar({ createClick, profileClick }) {
       >
         <IconButton
           color = "white"
-          icon = {<Image src = {acorn} alt = "acorn" boxSize = "35px" />}
           variant = "ghost"
           _hover = {{ bg: "none" }}
           onClick = {createClick}
         />
-        <Heading as = "h1" color = "white" fontFamily = "Recoleta">
+        <Heading as = "h1" color = "white" fontFamily = "Inter">
           whistl
         </Heading>
         <IconButton
