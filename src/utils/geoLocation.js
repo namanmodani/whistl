@@ -1,9 +1,5 @@
 /*
-File to contain all the utilities we need to calculate distances and all that jazz
-*/
-
-/*
-Takes in a source coord (object with fields lat and long) and location coord, and returns the distance between the
+This file takes in a source coord (object with fields lat and long) and location coord, and returns the distance between the
 two coordinates in meters.
 
 Heavily sourced from https://stackoverflow.com/questions/18883601/function-to-calculate-distance-between-two-coordinates
