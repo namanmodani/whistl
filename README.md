@@ -1,6 +1,6 @@
 # whistl - The Community Accessibility Bulletin
 
-Submission for [Hack on the Hill 9](https://hoth.uclaacm.com/): Equity Track 
+Submission for [Hack on the Hill 9](https://hoth.uclaacm.com/): Equity Track. 
 
 [GitHub Repository](https://github.com/namanmodani/whistl) • [Figma Prototype](https://www.figma.com/file/39obHkouG3yu8uLHtSNXsC/whistl?node-id=0%3A1) • [Devpost Submission](https://devpost.com/software/whistl-the-community-accessibility-bulletin)
 
