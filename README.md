@@ -16,8 +16,8 @@ So, creating a platform that allows members of the UCLA community to draw attent
 
 whistl is UCLA's Community Accessibility Bulletin. Essentially, whistl is a notice board for the UCLA community with a focus on accessibility-related issues on campus. Users hop on to the app and can primarily:
 
-* report problems they see/experience around campus
-* view recent incident reports by other users
+* report problems they see/experience around campus,
+* view recent incident reports by other users, and
 * upvote issues that matter to them,
 
 thus creating awareness and pushing for faster resolutions to these issues.
@@ -40,8 +40,8 @@ Finally, we created optimized WebView apps natively for both Android (Java) and 
 
 Two most significant challenges we encountered were:
 
-* Efficiently using the Maps API to indicate locations intuitively. We spent a lot of time working around this.
-* We also moderate difficulties making our app look great on all devices and screen sizes.
+* Efficiently using the Maps API for location tagging. We spent a lot of time working around this.
+* We also faced moderate difficulties making our app look great on all devices and screen sizes.
 
 ## Accomplishments we're proud of
 
